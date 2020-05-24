@@ -1,5 +1,5 @@
 const path = require("path")
-
+// Create slugs
 module.exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
 

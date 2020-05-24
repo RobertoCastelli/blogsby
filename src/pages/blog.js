@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import blogStyles from "./blog.module.scss"
+import Head from "../components/Head"
 
 const Blog = () => {
   const data = useStaticQuery(graphql`
@@ -24,6 +25,7 @@ const Blog = () => {
 
   return (
     <Layout>
+      <Head title="Blog" />
       <h1>Blog section</h1>
       <ol className={blogStyles.posts}>
         {data.allMarkdownRemark.edges.map(edge => {
