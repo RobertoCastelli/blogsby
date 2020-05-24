@@ -1,7 +1,7 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "The Blogsby!",
+    title: "Diary of an impostor",
     author: "Roberto Castelli",
   },
   plugins: [
